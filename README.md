@@ -56,7 +56,7 @@ A Python script to automate [Timewarrior](https://timewarrior.net/) task trackin
 Run the script with the following options:
 
 ```bash
-python timew_task.py [--project PROJECT] [--tags TAG1 TAG2 ...] [--hours HOURS]
+python timew.py [--project PROJECT] [--tags TAG1 TAG2 ...] [--hours HOURS]
 ```
 
 ### Arguments
@@ -72,7 +72,7 @@ python timew_task.py [--project PROJECT] [--tags TAG1 TAG2 ...] [--hours HOURS]
 ### Example 1: Start a Task with Default Values
 Start a task with the default project name `"Brain Image Library"` and duration of `2 hours`:
 ```bash
-python timew_task.py
+python timew.py
 ```
 
 Expected behavior:
@@ -90,7 +90,7 @@ Expected behavior:
 ### Example 2: Customize the Task's Project Name and Duration
 Start a task for a custom project (`"Research Project"`) that will last for 5 hours:
 ```bash
-python timew_task.py --project "Research Project" --hours 5
+python timew.py --project "Research Project" --hours 5
 ```
 
 Expected behavior:
@@ -108,7 +108,7 @@ Expected behavior:
 ### Example 3: Add Tags to a Task
 Start a task for the default project name with the tags `development` and `testing`, and let it last for 3 hours:
 ```bash
-python timew_task.py --tags development testing --hours 3
+python timew.py --tags development testing --hours 3
 ```
 
 Expected behavior:
@@ -126,7 +126,7 @@ Expected behavior:
 ### Example 4: Fully Customized Task
 Start a task with a custom project name, tags, and duration:
 ```bash
-python timew_task.py --project "Open Source Contributions" --tags coding documentation --hours 6
+python timew.py --project "Open Source Contributions" --tags coding documentation --hours 6
 ```
 
 Expected behavior:
